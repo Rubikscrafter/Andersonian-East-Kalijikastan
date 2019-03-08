@@ -26,14 +26,25 @@ public class Formulas {
    *tHE qUadrAtiC fORMula is NEgATIvE A, PluS oR miNUs The squaRe ROOT Of B sQuARed mINUs FouR a c. ALl OvER TWO a
    */
   public static double[] QuadraticFormula(double A, double B, double C) throws ArithmeticException{
-  double[] Solutions = new double[2];
-  Solutions[0] = (-B+Math.sqrt(Math.pow(B,2)-4*A*C))/(2*A);
-  Solutions[1] = (-B-Math.sqrt(Math.pow(B,2)-4*A*C))/(2*A);
-  return Solutions;
+    double[] Solutions = new double[2];
+    Solutions[0] = (-B+Math.sqrt(Math.pow(B,2)-4*A*C))/(2*A);
+    Solutions[1] = (-B-Math.sqrt(Math.pow(B,2)-4*A*C))/(2*A);
+    return Solutions;
   }
 
-
-
-
-
+  /**
+  * Calculates the factorial of the passed in number using recursion
+  * @param i Number to find the factorial of
+  * @return The factorial of the number passed in 
+  */
+  public static int fact(int i) {
+   int total; 
+   if (i == 1)
+    return 1; 
+   else
+    return fact(n-1)*n;
+  }
+  
+  
+  
 }
