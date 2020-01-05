@@ -20,7 +20,7 @@ public class Deck {
     for (String card : cards) {
       for (String suit : suits) {
         if (card.equals("A"))
-        addToDeck(new Card(card+suit, 11, true));
+        addToDeck(new Card(card+suit, 11));
         else if (card.equals("J") || card.equals("Q") || card.equals("K"))
         addToDeck(new Card(card+suit, 10));
         else
@@ -33,7 +33,7 @@ public class Deck {
     deck.add(card);
     deckValue += card.getVal();
   }
-  
+
   public void removeFromDeck() {deck.remove(0);}
   public void removeFromDeck(int index) {deck.remove(index);}
 
