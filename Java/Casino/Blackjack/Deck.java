@@ -1,3 +1,5 @@
+package Blackjack;
+
 import java.util.ArrayList;
 
 public class Deck {
@@ -6,13 +8,14 @@ public class Deck {
   private int deckValue;
 
   // Player hand
-  public Deck() {
+  Deck() {
     deck = new ArrayList<>();
     deckValue = 0;
   }
 
   // Full deck
-  public Deck(String str) {
+  Deck(String str) {
+    deck = new ArrayList<>();
     deckValue = 0;
     String[] suits = {"♠","♥","♦","♣"};
     String[] cards = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
@@ -34,12 +37,13 @@ public class Deck {
     deckValue += card.getVal();
   }
 
-  public void removeFromDeck() {deck.remove(0);}
+  public void removeFromTop() {deck.remove(0);}
   public void removeFromDeck(int index) {deck.remove(index);}
 
   public int getDeckValue() {return deckValue;}
-  public void showDeck() {
+
+  void showDeck() {
     for (Card card : deck)
-    card.showCard();
+      System.out.print(card.showCard()+" ");
   }
 }

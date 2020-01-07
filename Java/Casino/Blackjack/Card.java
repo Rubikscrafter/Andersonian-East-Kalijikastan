@@ -1,9 +1,11 @@
+package Blackjack;
+
 public class Card {
 
   private String id;  // Holds suit and number/face
   private int val;  // Holds value of card
 
-  public Card(String id, int val) {
+  Card(String id, int val) {
     this.id = id;
     this.val = val;
   }
@@ -13,6 +15,6 @@ public class Card {
     val = 1;
   }
 
-  public String showCard() {return id;}
-  public int getVal() {return val;}
+  String showCard() {return id;}
+  int getVal() {return val;}
 }
