@@ -1,8 +1,9 @@
 package Blackjack;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
-public class Deck {
+class Deck {
 
   private ArrayList<Card> deck;
   private int deckValue;
@@ -30,20 +31,28 @@ public class Deck {
         addToDeck(new Card(card+suit, Integer.parseInt(card)));
       }
     }
+    Collections.shuffle(deck);
   }
 
-  public void addToDeck(Card card) {
+  void addToDeck(Card card) {
     deck.add(card);
     deckValue += card.getVal();
   }
 
-  public void removeFromTop() {deck.remove(0);}
-  public void removeFromDeck(int index) {deck.remove(index);}
+  Card removeFromTop() {return deck.remove(0);}
 
-  public int getDeckValue() {return deckValue;}
+  int getDeckValue() {return deckValue;}
+  ArrayList<Card> getDeck() {return deck;}
+
+  void recount() {
+    deckValue = 0;
+    for (Card card : deck)
+      deckValue += card.getVal();
+  }
 
   void showDeck() {
     for (Card card : deck)
       System.out.print(card.showCard()+" ");
+    System.out.println();
   }
 }
