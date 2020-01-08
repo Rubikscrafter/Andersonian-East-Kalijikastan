@@ -1,4 +1,4 @@
-package Blackjack;
+package Casino.Blackjack;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -81,6 +81,7 @@ public class Blackjack {
       clearScreen();
       System.out.print("Player "+place+"'s Deck: ");
       player.showDeck();
+      System.out.println("Deck Value: "+player.getDeckValue());
       System.out.println("Would you like to hit or stand?\n\n\n");
       String answer = keys.nextLine();
       while (!answer.equalsIgnoreCase("hit") && !answer.equalsIgnoreCase("stand")) {
@@ -118,12 +119,12 @@ public class Blackjack {
     if (winner == 0)
     System.out.print("The dealer won with the following hand: ");
     else
-    System.out.print("Player " + winner + " won with the following hand:");
+    System.out.print("Player " + winner + " won with the following hand: ");
     hands.get(winner).showDeck();
     for (int i = 0; i < hands.size(); i++) {
       Deck player = hands.get(i);
       if (winner != 0 && i == 0) {
-        System.out.print("Dealer's hand:");
+        System.out.print("Dealer's hand: ");
         player.showDeck();
       } else if (player != hands.get(winner)) {
         System.out.print("Player " + i + "'s hand: ");

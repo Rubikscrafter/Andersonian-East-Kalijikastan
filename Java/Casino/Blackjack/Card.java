@@ -1,4 +1,4 @@
-package Blackjack;
+package Casino.Blackjack;
 
 public class Card {
 

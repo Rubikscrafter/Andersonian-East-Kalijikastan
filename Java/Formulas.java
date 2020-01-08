@@ -42,7 +42,7 @@ public class Formulas {
    if (i == 1)
     return 1; 
    else
-    return fact(n-1)*n;
+    return fact(i-1)*i;
   }
   
   
