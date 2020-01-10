@@ -27,7 +27,7 @@ public class Blackjack {
     int numOfPlayers = keys.nextInt();
     keys.nextLine();
     for (int i = 0; i < numOfPlayers; i++)
-    hands.add(new Deck());
+      hands.add(new Deck());
   }
 
   // Plays the game
@@ -43,9 +43,9 @@ public class Blackjack {
     while (game) {
       for (int i = 0; i < hands.size(); i++) {
         if (!hands.get(i).stood())
-        takeTurn(i);
+          takeTurn(i);
         if (!game)
-        break;
+          break;
       }
     }
   }
@@ -65,9 +65,9 @@ public class Blackjack {
       if (player.getDeckValue() == 21) {
         System.out.println("Dealer has dealt initial hands.");
         if (i == 0)
-        System.out.println("Dealer got Blackjack!");
+          System.out.println("Dealer got Blackjack!");
         else
-        System.out.println("Player " + i + " got Blackjack!");
+          System.out.println("Player " + i + " got Blackjack!");
         endGameBlackjack(i);
       }
     }
@@ -77,7 +77,7 @@ public class Blackjack {
     Deck player = hands.get(place);
     if (place == 0) {
       if (player.getDeckValue() < 17)  // TODO - Make dealer hit or stand based on probabilities or ai but that might be od
-      player.addToDeck(playingDeck.removeFromTop());
+        player.addToDeck(playingDeck.removeFromTop());
     } else {
       clearScreen();
       System.out.print("Player "+place+"'s Deck: ");
@@ -90,9 +90,9 @@ public class Blackjack {
         answer = keys.nextLine();
       }
       if (answer.equalsIgnoreCase("hit"))
-      hands.get(place).addToDeck(playingDeck.removeFromTop());
+        hands.get(place).addToDeck(playingDeck.removeFromTop());
       else
-      hands.get(place).stand();
+        hands.get(place).stand();
     }
 
     if (player.getDeckValue() > 21) {
@@ -101,15 +101,19 @@ public class Blackjack {
   }
 
   private void checkForBust(int player) {
-    for (Card card : hands.get(player).getDeck())
-    if (card.getVal() == 11)
-    card.changeToOne();
+    for (Card card : hands.get(player).getDeck()) {
+      if (card.getVal() == 11) {
+        card.changeToOne();
+        break;
+      }
+    }
+    hands.get(player).recount();
     if (hands.get(player).getDeckValue() > 21) {
       clearScreen();
       if (player == 0)
-      System.out.println("Dealer busted!");
+        System.out.println("Dealer busted!");
       else
-      System.out.println("Player " + player + " busted!");
+        System.out.println("Player " + player + " busted!");
       endGameBusted(player);
     }
   }
@@ -120,9 +124,9 @@ public class Blackjack {
   private void endGameBlackjack(int winner) {
     game = false;
     if (winner == 0)
-    System.out.print("The dealer won with the following hand: ");
+      System.out.print("The dealer won with the following hand: ");
     else
-    System.out.print("Player " + winner + " won with the following hand: ");
+      System.out.print("Player " + winner + " won with the following hand: ");
     hands.get(winner).showDeck();
     for (int i = 0; i < hands.size(); i++) {
       Deck player = hands.get(i);
@@ -164,9 +168,9 @@ public class Blackjack {
       }
     }
     if (winner == 0)
-    System.out.println("Dealer won!");
+      System.out.println("Dealer won!");
     else
-    System.out.println("Player "+winner+" won!");
+      System.out.println("Player "+winner+" won!");
   }
 
   // Asks if you want to play again
@@ -175,9 +179,9 @@ public class Blackjack {
     String pause = keys.next();
     clearScreen();
     System.out.println("Do you want to play again? (Y for yes, N for no)");
-    String answer = keys.nextLine();
+    String answer = keys.next();
     if (answer.equalsIgnoreCase("Y"))
-    new Blackjack();
+      new Blackjack();
     System.out.println("Thanks for playing!");
   }
 

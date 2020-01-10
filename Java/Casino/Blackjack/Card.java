@@ -11,7 +11,7 @@ public class Card {
   }
 
   // To change aces to have a value of one instead of eleven
-  public void changeToOne() {
+  void changeToOne() {
     val = 1;
   }
 
