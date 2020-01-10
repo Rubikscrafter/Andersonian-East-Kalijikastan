@@ -7,11 +7,13 @@ class Deck {
 
   private ArrayList<Card> deck;
   private int deckValue;
+  private boolean stand;
 
   // Player hand
   Deck() {
     deck = new ArrayList<>();
     deckValue = 0;
+    stand = false;
   }
 
   // Full deck
@@ -43,13 +45,14 @@ class Deck {
 
   int getDeckValue() {return deckValue;}
   ArrayList<Card> getDeck() {return deck;}
+  boolean stood() {return stand;}
 
   void recount() {
     deckValue = 0;
     for (Card card : deck)
       deckValue += card.getVal();
   }
-
+  void stand() {stand=true;}
   void showDeck() {
     for (Card card : deck)
       System.out.print(card.showCard()+" ");

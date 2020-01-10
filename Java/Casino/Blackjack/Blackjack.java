@@ -42,6 +42,7 @@ public class Blackjack {
     System.out.println("Dealer has dealt initial hands.");
     while (game) {
       for (int i = 0; i < hands.size(); i++) {
+        if (!hands.get(i).stood())
         takeTurn(i);
         if (!game)
         break;
@@ -90,6 +91,8 @@ public class Blackjack {
       }
       if (answer.equalsIgnoreCase("hit"))
       hands.get(place).addToDeck(playingDeck.removeFromTop());
+      else
+      hands.get(place).stand();
     }
 
     if (player.getDeckValue() > 21) {
