@@ -35,16 +35,15 @@ public class Formulas {
   /**
   * Calculates the factorial of the passed in number using recursion
   * @param i Number to find the factorial of
-  * @return The factorial of the number passed in 
+  * @return The factorial of the number passed in
   */
   public static int fact(int i) {
-   int total; 
    if (i == 1)
-    return 1; 
+    return 1;
    else
     return fact(i-1)*i;
   }
-  
-  
-  
+
+
+
 }
