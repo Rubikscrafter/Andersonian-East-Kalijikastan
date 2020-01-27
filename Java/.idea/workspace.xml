@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c732f8da-9f57-4ea5-95ee-87d804840ee8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/Blackjack/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/Blackjack/Blackjack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Casino/Poker/Poker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/Poker/Poker.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +17,11 @@
   <component name="ProjectId" id="1W79zeSMIeEdi4WkXT5dRnI2acG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Rec-Programs/Rec-Programs/Java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -65,6 +66,14 @@
       <option name="presentableId" value="Default" />
       <updated>1578490029826</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added recount logic&#10;Need to add if everyone stands logic">
+      <created>1578678686317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578678686317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,5 +88,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added recount logic&#10;Need to add if everyone stands logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added recount logic&#10;Need to add if everyone stands logic" />
   </component>
 </project>
