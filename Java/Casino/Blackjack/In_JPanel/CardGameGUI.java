@@ -1,4 +1,4 @@
-package AP_Labs.Elevens.src.Activity11StarterCode;
+package Casino.Blackjack.In_JPanel;
 
 import java.awt.Point;
 import java.awt.Graphics;
@@ -24,16 +24,18 @@ import java.util.ArrayList;
  */
 public class CardGameGUI extends JFrame implements ActionListener {
 
+	/** Dimensions of the monitor screen. */
+	private static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	/** Height of the game frame. */
-	private static final int DEFAULT_HEIGHT = 302;
+	private static final int DEFAULT_HEIGHT = screenSize.getHeight();
 	/** Width of the game frame. */
-	private static final int DEFAULT_WIDTH = 800;
+	private static final int DEFAULT_WIDTH = screenSize.getWidth();
 	/** Width of a card. */
-	private static final int CARD_WIDTH = 73;
+	private static final int CARD_WIDTH = 100;
 	/** Height of a card. */
-	private static final int CARD_HEIGHT = 97;
+	private static final int CARD_HEIGHT = (int) (CARD_WIDTH*3.5/2.5);
 	/** Row (y coord) of the upper left corner of the first card. */
-	private static final int LAYOUT_TOP = 30;
+	private static final int LAYOUT_TOP = ;
 	/** Column (x coord) of the upper left corner of the first card. */
 	private static final int LAYOUT_LEFT = 30;
 	/** Distance between the upper left x coords of

@@ -1,4 +1,4 @@
-package Casino.Blackjack;
+package Casino.Blackjack.In_JPanel;
 
 public class Card {
 
@@ -11,9 +11,7 @@ public class Card {
   }
 
   // To change aces to have a value of one instead of eleven
-  void changeToOne() {
-    val = 1;
-  }
+  void changeToOne() {val = 1;}
 
   int getVal() {return val;}
 

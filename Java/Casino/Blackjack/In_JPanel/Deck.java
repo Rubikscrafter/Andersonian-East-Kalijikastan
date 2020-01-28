@@ -1,4 +1,4 @@
-package Casino.Blackjack;
+package Casino.Blackjack.In_JPanel;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -45,7 +45,7 @@ class Deck {
   Card removeFromTop() {return deck.remove(0);}
 
   int getDeckValue() {return deckValue;}
-  ArrayList<Card> getDeck() {return deck;}
+  List<Card> getDeck() {return deck;}
   boolean stood() {return stand;}
 
   void recount() {
@@ -55,9 +55,10 @@ class Deck {
   }
   void stand() {stand=true;}
 
+  @Override
   public String toString() {
     for (Card card : deck)
       System.out.print(card+" ");
-    System.out.println();
+    return "";
   }
 }

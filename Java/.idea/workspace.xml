@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c732f8da-9f57-4ea5-95ee-87d804840ee8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Casino/Poker/Poker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/Poker/Poker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/BlackjackBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/BlackjackBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/BlackjackGUIRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/BlackjackGUIRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/CardGameGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/CardGameGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Casino/Blackjack/In_JPanel/Deck.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +22,7 @@
   <component name="ProjectId" id="1W79zeSMIeEdi4WkXT5dRnI2acG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Rec-Programs/Rec-Programs/Java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
